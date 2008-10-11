@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title><%= yield(:title) || "Idyle - Decentralized Rental and Sharing" %></title>
+		
+		<%= yield(:head) %>
+		
+		<%= stylesheet_link_tag 'idyle' %>
+		<%= stylesheet_link_tag 'farbtastic' %>
+		<%= stylesheet_link_tag 'item' %>
+		<%= stylesheet_link_tag 'tablesorter' %>
+		<%= stylesheet_link_tag 'tango-skin' %>
+		<%= stylesheet_link_tag 'themer' %>
+		
+		<%= javascript_include_tag 'jquery' %>
+		<%= javascript_include_tag 'jquery.ui.all.js' %>
+		<%= javascript_include_tag 'jrails' %>
+		<%= javascript_include_tag 'application' %>
+		<%= javascript_include_tag 'farbtastic' %>
+		<%= javascript_include_tag 'jquery.tablesorter.min.js' %>
+		<%= javascript_include_tag 'themer' %>
+		
+		
+	</head>
+	<body>
+		
+		<%= render :partial => 'page/themer' %>
+		<div id="container">
+			<div id="header">
+				<%= 
+					render :partial => 'page/main_navigation' 
+				%>
+			</div>
+			<div id="sidebar">
+				<ul>
+					<li><a href="#">Hello There</a></li>
+				</ul>
+				<%= yield :subnav %>
+			</div>
+			<div  id="content">
+				<%= yield %>
+			</div>
+			<br class="brhack">
+			<div id="footer">
+				<p class="pad nomargin">Idyle Copystraight 2008 <a href="/tyler">Tyler Tompkins</a></p>
+			</div>
+		</div>
+	</body>
+</html>

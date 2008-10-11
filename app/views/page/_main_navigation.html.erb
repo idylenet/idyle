@@ -1,0 +1,24 @@
+<ul id="main-navigation">
+	
+	<li>
+	<h1><%= link_to "Idyle Collaborations", '/' %></h1> 
+	</li>
+	<li>
+	<%= link_to "Groups", groups_path %> \
+	</li>
+	<li>
+	<%= link_to "Account", '/account' %> \
+	</li>
+	<li>
+	<%= link_to "FAQ", faq_path %> 
+	</li>
+	
+	<li style="margin-left: 0.5em" id="item-nav">
+	<p style="display: inline; padding-left: 0; margin-left: 0">
+		<strong>Items:</strong> 
+		<%= link_to "Browse", items_path %> \ 
+		<%= link_to "New", new_item_path %>
+	</p>
+	</li>
+
+</ul>

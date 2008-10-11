@@ -1,0 +1,41 @@
+
+#theme-panel {
+	background-color: #ccc;
+	color: #000;
+	width: 40%;
+	font-weight: bold;
+}
+
+#theme-panel.toggle {
+	width: 100%;
+	height: 1.2em;
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+#picker-container {
+	display: none;
+	position: absolute;
+	width: 400px;
+	height: 400px;
+}
+
+.theme-cp.lock, .unlock, .inspect {
+	width: 20px;
+	height: 20px;
+	padding: 0em;
+	margin: 0em;
+}
+
+.theme-cp.lock {
+	background-image: url('images/aesthetica/png/24x24/lock.png');
+}
+
+.theme-cp.unlock {
+	background-image: url('images/aesthetica/png/24x24/lock_off.png');
+}
+
+.theme-cp.inspect {
+	background-image: url('images/aesthetica/png/24x24/info.png');
+}
+

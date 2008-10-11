@@ -1,0 +1,136 @@
+/*p, table, hr, .box { margin-bottom:25px; }*/
+/*.box p { margin-bottom:10px; }*/
+
+body {
+	background-color: #fff;
+	padding: 0em;
+	margin: 0em;
+}
+
+p { 
+	margin-left: 1em;
+	margin-top: 0em;
+	font-size: 1.2em;
+}
+
+a { color: blue; }
+a:hover { color: orange;}
+
+form p
+{
+	display: block;
+	clear: both;
+	background:white;
+}
+
+.fieldWithErrors {
+	
+	background: yellow;
+}
+
+input {
+
+}
+
+input[type="submit"] {
+	clear: both;
+	display: block;
+}
+
+#container { 
+	background-color: tan;
+
+}
+
+#content {
+
+	border-top: 0.2em solid #00a;
+	border-bottom: 0.2em solid #ff0;
+	margin-bottom: 0.3em;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	padding-top: 1em;
+	width: 80%;
+	margin-left: 12%;
+	background: white;
+	
+}
+
+#header, #footer { background-color: #fff000; padding: 0.3em; padding-left: 0em; padding-right: 0em;}
+#header {position: relative; top: -0em; padding-left: 0.5em; border-bottom: 0.2em solid #ff0;}
+#footer { background-color: white; color: black; font-weight: bold; text-align: right; border-top: 0.2em solid #ccc; border-bottom: 0.1em solid #ddd;}
+#header h1 { clear: none; display: inline; }
+
+#sidebar { 
+	float: left;
+	width: 10%;
+	height: 100%;
+	background: tan;
+
+}
+
+.accordion {
+	width: 95%;
+	margin-bottom: 1em;
+}
+
+.accordion a.tab {
+	display: block;
+	background: #ddd;
+	font-size: 2.1em;
+	padding-left: 1em;
+}
+
+.accordion a.tab:hover {
+	color: white;
+	cursor: pointer;
+}
+
+/*.tablesorter {
+	width: 95%;
+}*/
+.nav-seperator {
+	color: #ccc;
+}
+
+#item-nav {
+	color: red;
+}
+
+#main-navigation {
+	position: relative;
+	top: -0em;
+	/*left: -2.5em;*/
+	display: inline;
+	padding: 0em;
+	margin-left: 0em;
+	padding-bottom: 0.8em;
+}
+
+#main-navigation li { 
+	font-size: 1.6em; 
+	display: inline; 
+	clear: none; 
+	padding: none; 
+	margin: none; 
+	list-style-type: none; 
+}
+
+#sub-navigation li { 
+	font-size: 1.5em; 
+	display: inline; 
+	clear: none; 
+	padding: none; 
+	margin: none; 
+	list-style-type: none; 
+}
+
+.pad { padding: 0.5em; }
+.block { display: block;}
+.inline { display: inline;}
+.noclear { clear: none;}
+.clear { clear: both;}
+.nomargin { margin: 0em}
+.nopad { padding: 0em;}
+.box { }
+.width95 { width: 95%;}
