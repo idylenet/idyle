@@ -6,7 +6,7 @@ development:
   adapter: mysql
   host: localhost
   username: tyler
-  password: magic
+  password: 
   port: 5432
 
 # Warning: The database defined as 'test' will be erased and
@@ -17,12 +17,12 @@ test:
   adapter: mysql
   host: localhost
   username: tyler
-  password: magic
+  password: 
   port: 5432
 
 production:
   adapter: mysql
   host: localhost
   username: idylenet_idyle
-  password: lebowski
+  password: 
   database: idylenet_idyle
