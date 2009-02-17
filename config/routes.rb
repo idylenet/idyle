@@ -1,41 +1,11 @@
 ActionController::Routing::Routes.draw do |map|
-  map.resources :groups
 
-  
-  map.resources :groups
+  map.root :controller => 'page', :action => 'index'
+  map.work '/work', :controller => 'page', :action => 'work'
+  map.ideas '/ideas', :controller => 'page', :action => 'ideas'
+  map.links '/links', :controller => 'page', :action => 'links'
+  map.permaculture '/permaculture', :controller => 'page', :action => 'permaculture'
 
-  map.resources :locations
-
-  map.resources :items
-
-  map.resources :users
-
-  map.resource :session
-
-  map.resources :users do |users|
-    users.resources :items, :name_prefix => 'user_'
-  end
-  
-  map.resources :locations do |locations|
-    locations.resources :users, :name_prefix => 'location_'
-    locations.resources :items, :name_prefix => 'location_'
-  end
-  
-  map.resources :items do |items|
-    items.resources :users, :name_prefix => 'item_'
-  end
-  
-  map.root :controller => 'page'
-  map.home '/', :controller => 'page', :action => 'index'
-  map.faq  '/faq', :controller => 'page', :action => 'faq'
-  map.howitworks '/howitworks', :controller => 'page', :action => 'howitworks'
-  map.account '/account', :controller => 'users', :action => 'index'
-  
-  map.activate '/activate/:activation_code', :controller => 'users', :action => 'activate'
-  map.signup '/signup', :controller => 'users', :action => 'new'
-  map.login '/login', :controller => 'sessions', :action => 'new'
-  map.logout '/logout', :controller => 'sessions', :action => 'destroy'
-  
   # The priority is based upon order of creation: first created -> highest priority.
 
   # Sample of regular route:
@@ -73,6 +43,8 @@ ActionController::Routing::Routes.draw do |map|
   # See how all your routes lay out with "rake routes"
 
   # Install the default routes as the lowest priority.
+  # Note: These default routes make all actions in every controller accessible via GET requests. You should
+  # consider removing the them or commenting them out if you're using named routes and resources.
   map.connect ':controller/:action/:id'
   map.connect ':controller/:action/:id.:format'
 end

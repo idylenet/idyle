@@ -1,9 +1,23 @@
 class PageController < ApplicationController
-  
-  # custom methods
-  def faq
+
+  def index
+    
+  end
+    
+  def work
+    
   end
   
-  def howitworks
+  def ideas
+    
   end
+  
+  def links
+    
+  end
+  
+  def permaculture
+  end
+    
+
 end

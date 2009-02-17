@@ -1,51 +1,61 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
-"http://www.w3.org/TR/html4/strict.dtd">
-<html lang="en">
+<html>
+	
 	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		<title><%= yield(:title) || "Idyle - Decentralized Rental and Sharing" %></title>
-		
-		<%= yield(:head) %>
-		
+		<title>IDYLE.NET - <% unless @title %>Home<% else %><%= @title %><% end %></title>
 		<%= stylesheet_link_tag 'idyle' %>
-		<%= stylesheet_link_tag 'farbtastic' %>
-		<%= stylesheet_link_tag 'item' %>
-		<%= stylesheet_link_tag 'tablesorter' %>
-		<%= stylesheet_link_tag 'tango-skin' %>
-		<%= stylesheet_link_tag 'themer' %>
-		
 		<%= javascript_include_tag 'jquery' %>
-		<%= javascript_include_tag 'jquery.ui.all.js' %>
 		<%= javascript_include_tag 'jrails' %>
 		<%= javascript_include_tag 'application' %>
-		<%= javascript_include_tag 'farbtastic' %>
-		<%= javascript_include_tag 'jquery.tablesorter.min.js' %>
-		<%= javascript_include_tag 'themer' %>
+		<%= javascript_include_tag 'jquery.cycle.all.min.js' %>
+		<%= javascript_include_tag 'ui/jquery.ui.all.js' %>
+		<%= javascript_include_tag 'principle_spinner' %>
+		<%= javascript_include_tag 'jquery.url.js' %>
+		<%= yield :head %>
 		
+		<script type="text/javascript">
+			$(document).ready(function(){
+				<%= yield :document_ready %>
+			})
+		</script>
 		
 	</head>
+	
 	<body>
-		
-		<%= render :partial => 'page/themer' %>
 		<div id="container">
 			<div id="header">
-				<%= 
-					render :partial => 'page/main_navigation' 
-				%>
+								
+				<h1><a href="/">IDYLE.NET</a></h1>
+				
+				<ol id="principles">
+					<li>Quality over Quantity</li>
+					<li>Lead by Example</li>
+				</ol>
+				
+				<br clear="both">
+			</div>			
+		
+			<div id="navigation">
+				<a href="/">Home</a>
+				<a href="/work">Portfolio</a>
+				<a href="/ideas">Ideas</a>
+				<a href="/permaculture">Permaculture</a>
+				<a href="/links">Links</a>
+				<br clear="both">
 			</div>
-			<div id="sidebar">
-				<ul>
-					<li><a href="#">Hello There</a></li>
-				</ul>
-				<%= yield :subnav %>
-			</div>
-			<div  id="content">
+		
+			<div id="content">
+			
+				<h2><%= @title %></h2>
+				
 				<%= yield %>
+			
+				<br clear="both"/>
 			</div>
-			<br class="brhack">
+		
 			<div id="footer">
-				<p class="pad nomargin">Idyle Copystraight 2008 <a href="/tyler">Tyler Tompkins</a></p>
+				<p>Copystraight 2009 IDYLE.NET</p>
 			</div>
 		</div>
 	</body>
+	
 </html>

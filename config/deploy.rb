@@ -1,22 +1,40 @@
-
 default_run_options[:pty] = true
-set :repository,  "git@github.com:vanpelt/rails-app.git"
+
+set :application, 'idyle'
+set :repository,  "git@github.com:idylenet/#{application}.git"
 set :scm, "git"
-set :scm_passphrase, "p@ssw0rd" #This is your custom users password
-set :user, "deployer"
+set :user, "idylenet"
+set :domain, 'idyle.net'  # slamdot servername where your account is located 
+set :applicationdir, "/home/#{user}/apps/#{application}"  # The standard slamdot setup
 
-set :application, "idyle"
-set :repository,  ""
+set :ssh_options, {:forward_agent => true}
+set :branch, "master"
+set :git_shallow_clone, 1
+set :git_enable_submodules, 1
 
-# If you aren't deploying to /u/apps/#{application} on the target
-# servers (which is the default), you can specify the actual location
-# via the :deploy_to variable:
-# set :deploy_to, "/var/www/#{application}"
+# Don't change this stuff, but you may want to set shared files at the end of the file ##################
+# deploy config
+set :deploy_to, applicationdir
+set :deploy_via, :remote_cache
 
-# If you aren't using Subversion to manage your source code, specify
-# your SCM below:
-# set :scm, :subversion
+# roles (servers)
+role :app, domain
+role :web, domain
+role :db,  domain, :primary => true
 
-role :app, "www.idyle.org"
-role :web, "www.idyle.org"
-role :db,  "www.idyle.org", :primary => true
+namespace :deploy do
+ [:start, :stop, :restart, :finalize_update, :migrate, :migrations, :cold].each do |t|
+   desc "#{t} task is a no-op with mod_rails"
+   task t, :roles => :app do ; end
+ end
+end
+
+# additional settings
+default_run_options[:pty] = true  # Forgo errors when deploying from windows
+#ssh_options[:keys] = %w(/Path/To/id_rsa)            # If you are using ssh_keys
+#set :chmod755, "app config db lib public vendor script script/* public/disp*"
+set :use_sudo, false
+
+on :start do
+    `ssh-add`
+end
