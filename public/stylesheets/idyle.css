@@ -25,6 +25,9 @@ h1 a:visited {
 #navigation {
 	border-bottom: 0.3em solid orange;
 	margin-bottom: 1em;
+	border-left: 0.1em solid blue;
+	border-right: 0.1em solid orange;
+	border-collapse: collapse;
 }
 
 #navigation a {
@@ -34,10 +37,11 @@ h1 a:visited {
 	padding: 0.5em;
 	padding-left: 1em;
 	padding-right: 1em;
-	padding-bottom: 1em;
+	padding-bottom: 0.5em;
 	display: block;
 	float: left;
-	border-top: 0.5em solid transparent;
+	border-top: 0.1em solid transparent;
+	border-bottom: 0.1em solid transparent;
 	border-left: 0.1em solid transparent;
 	border-right: 0.1em solid transparent;
 	border-collapse: collapse;
@@ -48,11 +52,12 @@ h1 a:visited {
 }
 
 .nav_hover, #navigation a:hover {
-	border-top: 0.5em solid blue;
+	border-top: 0.1em solid blue;
 	border-left: 0.1em solid blue;
-	border-right: 0.1em solid blue;
-	color: white;
-	background: orange;
+	border-right: 0.1em solid orange;
+	border-bottom: 0.1em solid orange;
+	color: black;
+	background: yellow;
 }
 
 
