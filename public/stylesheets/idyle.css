@@ -4,6 +4,10 @@ body {
 	font-family: tahoma, arial;
 }
 
+h1, h2, h3, h4, h5, h6 {
+	border-bottom: 0.1em solid blue;
+}
+
 h1 {
 	color: white;
 	float: left;
@@ -31,7 +35,6 @@ h1 a:visited {
 }
 
 #navigation a {
-
 	font-size: 1.2em;
 	height: 1.2em;
 	padding: 0.5em;
@@ -48,7 +51,7 @@ h1 a:visited {
 }
 
 #navigation a:visited {
-	color: #000;
+	color: blue;
 }
 
 .nav_hover, #navigation a:hover {

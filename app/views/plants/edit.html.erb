@@ -1,0 +1,36 @@
+<% title "Editing plant" %>
+
+<% form_for(@plant) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :common_name %><br />
+    <%= f.text_field :common_name %>
+  </p>
+  <p>
+    <%= f.label :bot_name %><br />
+    <%= f.text_field :bot_name %>
+  </p>
+  <p>
+    <%= f.label :desc %><br />
+    <%= f.text_area :desc %>
+  </p>
+  <p>
+    <%= f.label :spacing %><br />
+    <%= f.text_field :spacing %>
+  </p>
+  <p>
+    <%= f.label :sowing_depth %><br />
+    <%= f.text_field :sowing_depth %>
+  </p>
+  <p>
+    <%= f.label :yield_worth %><br />
+    <%= f.text_field :yield_worth %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @plant %> |
+<%= link_to 'Back', plants_path %>

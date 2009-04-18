@@ -1,10 +1,14 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :plants
+
 
   map.root :controller => 'page', :action => 'index'
   map.work '/work', :controller => 'page', :action => 'work'
   map.ideas '/ideas', :controller => 'page', :action => 'ideas'
   map.links '/links', :controller => 'page', :action => 'links'
   map.permaculture '/permaculture', :controller => 'page', :action => 'permaculture'
+  map.farm '/farm', :controller => 'page', :action => 'farm'
+  map.about '/about', :controller => 'page', :action => 'about'
 
   # The priority is based upon order of creation: first created -> highest priority.
 

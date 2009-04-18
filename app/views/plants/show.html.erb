@@ -1,0 +1,33 @@
+<p>
+  <b>Common name:</b>
+  <%=h @plant.common_name %>
+</p>
+
+<p>
+  <b>Bot name:</b>
+  <%=h @plant.bot_name %>
+</p>
+
+<p>
+  <b>Desc:</b>
+  <%=h @plant.desc %>
+</p>
+
+<p>
+  <b>Spacing:</b>
+  <%=h @plant.spacing %>
+</p>
+
+<p>
+  <b>Sowing depth:</b>
+  <%=h @plant.sowing_depth %>
+</p>
+
+<p>
+  <b>Yield worth:</b>
+  <%=h @plant.yield_worth %>
+</p>
+
+
+<%= link_to 'Edit', edit_plant_path(@plant) %> |
+<%= link_to 'Back', plants_path %>

@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  common_name: MyString
+  bot_name: MyString
+  desc: MyText
+  spacing: 1
+  sowing_depth: 1.5
+  yield_worth: 1.5
+
+two:
+  common_name: MyString
+  bot_name: MyString
+  desc: MyText
+  spacing: 1
+  sowing_depth: 1.5
+  yield_worth: 1.5

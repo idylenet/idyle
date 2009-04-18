@@ -3,6 +3,7 @@ module ApplicationHelper
 
   def title(title)
     @title = title
+    html = "<h2 id='page_title'>#{title}</h2>"
   end
 
 end

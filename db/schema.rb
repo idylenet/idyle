@@ -9,40 +9,15 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20080724034409) do
+ActiveRecord::Schema.define(:version => 20090416203032) do
 
-  create_table "items", :force => true do |t|
-    t.string   "name"
+  create_table "plants", :force => true do |t|
+    t.string   "common_name"
+    t.string   "bot_name"
     t.text     "desc"
-    t.float    "deposit"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "locations", :force => true do |t|
-    t.string   "name"
-    t.string   "line1"
-    t.string   "line2"
-    t.string   "region"
-    t.string   "zipcode"
-    t.string   "country"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.string   "city"
-  end
-
-  create_table "users", :force => true do |t|
-    t.string   "login"
-    t.string   "email"
-    t.string   "crypted_password",          :limit => 40
-    t.string   "salt",                      :limit => 40
-    t.string   "remember_token"
-    t.datetime "remember_token_expires_at"
-    t.string   "activation_code",           :limit => 40
-    t.datetime "activated_at"
-    t.string   "password_reset_code",       :limit => 40
-    t.string   "state",                                   :default => "passive"
-    t.integer  "location_id",               :limit => 11
+    t.integer  "spacing"
+    t.float    "sowing_depth"
+    t.float    "yield_worth"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

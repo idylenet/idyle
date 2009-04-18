@@ -18,6 +18,12 @@ class PageController < ApplicationController
   
   def permaculture
   end
+  
+  def farm
+  end
+  
+  def about
+  end
     
 
 end

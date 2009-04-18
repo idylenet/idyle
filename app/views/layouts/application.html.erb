@@ -8,46 +8,92 @@
 		<%= javascript_include_tag 'application' %>
 		<%= javascript_include_tag 'jquery.cycle.all.min.js' %>
 		<%= javascript_include_tag 'ui/jquery.ui.all.js' %>
-		<%= javascript_include_tag 'principle_spinner' %>
 		<%= javascript_include_tag 'jquery.url.js' %>
 		<%= yield :head %>
 		
 		<script type="text/javascript">
+		
+			var pages = []
+		
 			$(document).ready(function(){
+				
+				// get our current title
+				doc = $(this)
+				currentTitle = doc.attr('title')
+				splitter = ' - '
+				split = currentTitle.split(splitter)
+				prefix = split[0]
+				
+				// get loading element
+				loading = $('#loading')
+
+				// make each nav link load the content of that page into the #page element
+				$('#navigation a').click(function(){
+					link = $(this)
+					href = link.attr('href')
+
+					// temp loading
+					loading.html('LOADING...')
+
+					// new page
+					var page = null
+
+					// did we already load this page?
+					if(typeof(pages[href]) != 'undefined')
+					{
+						// serve up the cache
+						swapContent(pages[href])
+					} else {
+						$.get(href, function(d){ 
+							swapContent(d)
+						 })
+					}
+
+					// don't let the normal link work
+					return false				
+				})
+				
+				function swapContent(newContent){
+					$('#page').html(newContent)
+					doc.attr("title", prefix + splitter + $('#page_title').html());
+					loading.html('')
+					pages[href] = newContent
+				}
+				
+				// page specific loading code
 				<%= yield :document_ready %>
 			})
 		</script>
+		
 		
 	</head>
 	
 	<body>
 		<div id="container">
 			<div id="header">
-								
 				<h1><a href="/">IDYLE.NET</a></h1>
-				
 				<ol id="principles">
 					<li>Quality over Quantity</li>
 					<li>Lead by Example</li>
 				</ol>
-				
 				<br clear="both">
-			</div>			
+			</div>
 		
 			<div id="navigation">
 				<a href="/">Home</a>
-				<a href="/work">Portfolio</a>
-				<a href="/ideas">Ideas</a>
-				<a href="/permaculture">Permaculture</a>
-				<a href="/links">Links</a>
+				<a href="/farm">The Farm</a>
+				<a href="/work">Projects</a>
+				<a href="/ideas">Things I Want To Build</a>
+				<a href="/permaculture">Sustainable Life</a>
+				<a href="/about">About IDYLE</a>
+				<a href="/links">Linkage</a>
 				<br clear="both">
 			</div>
 		
 			<div id="content">
-			
-				<h2><%= @title %></h2>
+				<div id="loading"></div>
 				
-				<%= yield %>
+				<div id="page"><%= yield %></div>
 			
 				<br clear="both"/>
 			</div>
