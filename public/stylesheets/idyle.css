@@ -56,28 +56,15 @@ h1 a:visited {
 
 .nav_hover, #navigation a:hover {
 	border-top: 0.1em solid blue;
-	border-left: 0.1em solid blue;
+	border-left: 0.1em solid orange;
 	border-right: 0.1em solid orange;
 	border-bottom: 0.1em solid orange;
-	color: black;
-	background: yellow;
+	color: white;
+	background: orange;
 }
 
-
-
-#principles {
-/*	border: 0.1em solid #000;*/
-	width: 10em;
-	font-size: 1.5em;
-	text-align: center;
-	font-weight: normal;
-	display: inline;
-}
-
-#principles li {
-	margin: 0.2em;
-	list-style-type: none;
-	display: none;
+#sill {
+	height: 1em;
 }
 
 #footer {
@@ -86,4 +73,11 @@ h1 a:visited {
 
 #footer p {
 	margin-left: 1em;
+}
+
+#loading {
+	display: none;
+	width: 200px;
+	margin-left: auto;
+	margin-right: auto;
 }

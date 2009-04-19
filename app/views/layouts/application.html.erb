@@ -3,11 +3,12 @@
 	<head>
 		<title>IDYLE.NET - <% unless @title %>Home<% else %><%= @title %><% end %></title>
 		<%= stylesheet_link_tag 'idyle' %>
-		<%= javascript_include_tag 'jquery' %>
+		<%= stylesheet_link_tag 'ui/jquery-ui.css' %>
+		
+		<%= javascript_include_tag 'jquery-1.3.2.min.js' %>
 		<%= javascript_include_tag 'jrails' %>
 		<%= javascript_include_tag 'application' %>
-		<%= javascript_include_tag 'jquery.cycle.all.min.js' %>
-		<%= javascript_include_tag 'ui/jquery.ui.all.js' %>
+		<%= javascript_include_tag 'jquery-ui-1.7.1.custom.min.js' %>
 		<%= javascript_include_tag 'jquery.url.js' %>
 		<%= yield :head %>
 		
@@ -24,6 +25,9 @@
 				split = currentTitle.split(splitter)
 				prefix = split[0]
 				
+				// make sure to label the first page
+				activePage = 'index'
+				
 				// get loading element
 				loading = $('#loading')
 
@@ -33,19 +37,24 @@
 					href = link.attr('href')
 
 					// temp loading
-					loading.html('LOADING...')
+					loading.show()
 
+					var pageHandle = href.slice(1, href.length).replace(/\//g, '_')
+					pageHandle = pageHandle == '' ? 'index' : pageHandle
+					
 					// new page
-					var page = null
+					var page = $('#' + pageHandle)
 
 					// did we already load this page?
-					if(typeof(pages[href]) != 'undefined')
+					if(page.length)
 					{
 						// serve up the cache
-						swapContent(pages[href])
+						swapContent(pageHandle)
 					} else {
 						$.get(href, function(d){ 
-							swapContent(d)
+							newPage = $('<div class="page"></div>').attr('id', pageHandle).html(d).css('display', 'none')
+							$('#pages').append(newPage)
+							swapContent(pageHandle)
 						 })
 					}
 
@@ -53,11 +62,15 @@
 					return false				
 				})
 				
-				function swapContent(newContent){
-					$('#page').html(newContent)
-					doc.attr("title", prefix + splitter + $('#page_title').html());
-					loading.html('')
-					pages[href] = newContent
+				function swapContent(handle){
+
+					$('#' + activePage).hide('slow', function(){
+						$('#' + handle).show('slow')
+						loading.hide()
+						activePage = handle
+						doc.attr("title", prefix + splitter + $('#' + activePage + ' h2.page_title').html());
+					})
+					
 				}
 				
 				// page specific loading code
@@ -72,10 +85,6 @@
 		<div id="container">
 			<div id="header">
 				<h1><a href="/">IDYLE.NET</a></h1>
-				<ol id="principles">
-					<li>Quality over Quantity</li>
-					<li>Lead by Example</li>
-				</ol>
 				<br clear="both">
 			</div>
 		
@@ -90,11 +99,14 @@
 				<br clear="both">
 			</div>
 		
-			<div id="content">
-				<div id="loading"></div>
+			<div id="sill">
+				<div id="loading"><img src="images/loading.gif"></img></div>
+			</div>
+			<div id="content">				
 				
-				<div id="page"><%= yield %></div>
-			
+				<div id="pages">
+					<div class="page" id="index"><%= yield %></div>
+				</div>
 				<br clear="both"/>
 			</div>
 		

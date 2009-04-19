@@ -25187,3 +25187,666 @@ Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/about]
 Processing PageController#links (for 127.0.0.1 at 2009-04-18 14:49:38) [GET]
 Rendering page/links
 Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/links]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#index (for 127.0.0.1 at 2009-04-18 18:48:47) [GET]
+Rendering template within layouts/application
+Rendering page/index
+Completed in 28ms (View: 26, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#ideas (for 127.0.0.1 at 2009-04-18 18:48:49) [GET]
+Rendering page/ideas
+Completed in 31ms (View: 29, DB: 0) | 200 OK [http://localhost/ideas]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#permaculture (for 127.0.0.1 at 2009-04-18 18:48:50) [GET]
+Rendering page/permaculture
+Completed in 33ms (View: 32, DB: 0) | 200 OK [http://localhost/permaculture]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#about (for 127.0.0.1 at 2009-04-18 18:48:51) [GET]
+Rendering page/about
+Completed in 30ms (View: 28, DB: 0) | 200 OK [http://localhost/about]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#work (for 127.0.0.1 at 2009-04-18 18:48:53) [GET]
+Rendering page/work
+Completed in 32ms (View: 31, DB: 0) | 200 OK [http://localhost/work]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#farm (for 127.0.0.1 at 2009-04-18 18:48:54) [GET]
+Rendering page/farm
+Completed in 92ms (View: 90, DB: 0) | 200 OK [http://localhost/farm]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#index (for 127.0.0.1 at 2009-04-18 18:48:55) [GET]
+Rendering page/index
+Completed in 33ms (View: 31, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#links (for 127.0.0.1 at 2009-04-18 18:48:56) [GET]
+Rendering page/links
+Completed in 31ms (View: 30, DB: 0) | 200 OK [http://localhost/links]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#index (for 127.0.0.1 at 2009-04-18 19:19:54) [GET]
+Rendering template within layouts/application
+Rendering page/index
+Completed in 138ms (View: 135, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#index (for 127.0.0.1 at 2009-04-18 19:20:23) [GET]
+Rendering template within layouts/application
+Rendering page/index
+Completed in 23ms (View: 22, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#index (for 127.0.0.1 at 2009-04-18 19:20:36) [GET]
+Rendering template within layouts/application
+Rendering page/index
+Completed in 23ms (View: 21, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#permaculture (for 127.0.0.1 at 2009-04-18 19:37:13) [GET]
+Rendering page/permaculture
+Completed in 77ms (View: 76, DB: 0) | 200 OK [http://localhost/permaculture]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#ideas (for 127.0.0.1 at 2009-04-18 19:37:15) [GET]
+Rendering page/ideas
+Completed in 46ms (View: 44, DB: 0) | 200 OK [http://localhost/ideas]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#index (for 127.0.0.1 at 2009-04-18 19:52:49) [GET]
+Rendering template within layouts/application
+Rendering page/index
+Completed in 51ms (View: 47, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (19.5ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#farm (for 127.0.0.1 at 2009-04-18 19:52:51) [GET]
+Rendering page/farm
+Completed in 92ms (View: 91, DB: 20) | 200 OK [http://localhost/farm]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#work (for 127.0.0.1 at 2009-04-18 19:52:53) [GET]
+Rendering page/work
+Completed in 58ms (View: 55, DB: 0) | 200 OK [http://localhost/work]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#ideas (for 127.0.0.1 at 2009-04-18 19:52:55) [GET]
+Rendering page/ideas
+Completed in 39ms (View: 37, DB: 0) | 200 OK [http://localhost/ideas]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#permaculture (for 127.0.0.1 at 2009-04-18 19:52:56) [GET]
+Rendering page/permaculture
+Completed in 37ms (View: 35, DB: 0) | 200 OK [http://localhost/permaculture]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#index (for 127.0.0.1 at 2009-04-18 19:53:18) [GET]
+Rendering template within layouts/application
+Rendering page/index
+Completed in 24ms (View: 22, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#ideas (for 127.0.0.1 at 2009-04-18 19:53:19) [GET]
+Rendering page/ideas
+Completed in 36ms (View: 34, DB: 0) | 200 OK [http://localhost/ideas]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#permaculture (for 127.0.0.1 at 2009-04-18 19:53:21) [GET]
+Rendering page/permaculture
+Completed in 36ms (View: 34, DB: 0) | 200 OK [http://localhost/permaculture]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#about (for 127.0.0.1 at 2009-04-18 19:53:23) [GET]
+Rendering page/about
+Completed in 66ms (View: 64, DB: 0) | 200 OK [http://localhost/about]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#index (for 127.0.0.1 at 2009-04-18 19:53:41) [GET]
+Rendering template within layouts/application
+Rendering page/index
+Completed in 23ms (View: 21, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#ideas (for 127.0.0.1 at 2009-04-18 19:53:42) [GET]
+Rendering page/ideas
+Completed in 37ms (View: 35, DB: 0) | 200 OK [http://localhost/ideas]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#work (for 127.0.0.1 at 2009-04-18 19:53:45) [GET]
+Rendering page/work
+Completed in 95ms (View: 93, DB: 0) | 200 OK [http://localhost/work]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#farm (for 127.0.0.1 at 2009-04-18 19:53:47) [GET]
+Rendering page/farm
+Completed in 35ms (View: 33, DB: 0) | 200 OK [http://localhost/farm]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#index (for 127.0.0.1 at 2009-04-18 19:55:11) [GET]
+Rendering template within layouts/application
+Rendering page/index
+Completed in 25ms (View: 24, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#work (for 127.0.0.1 at 2009-04-18 19:55:12) [GET]
+Rendering page/work
+Completed in 35ms (View: 34, DB: 0) | 200 OK [http://localhost/work]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#farm (for 127.0.0.1 at 2009-04-18 19:55:14) [GET]
+Rendering page/farm
+Completed in 33ms (View: 32, DB: 0) | 200 OK [http://localhost/farm]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#ideas (for 127.0.0.1 at 2009-04-18 19:55:17) [GET]
+Rendering page/ideas
+Completed in 35ms (View: 34, DB: 0) | 200 OK [http://localhost/ideas]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#permaculture (for 127.0.0.1 at 2009-04-18 19:55:19) [GET]
+Rendering page/permaculture
+Completed in 34ms (View: 32, DB: 0) | 200 OK [http://localhost/permaculture]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#about (for 127.0.0.1 at 2009-04-18 19:55:21) [GET]
+Rendering page/about
+Completed in 35ms (View: 34, DB: 0) | 200 OK [http://localhost/about]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#links (for 127.0.0.1 at 2009-04-18 19:55:24) [GET]
+Rendering page/links
+Completed in 68ms (View: 65, DB: 0) | 200 OK [http://localhost/links]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#index (for 127.0.0.1 at 2009-04-18 19:57:36) [GET]
+Rendering template within layouts/application
+Rendering page/index
+Completed in 23ms (View: 22, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#ideas (for 127.0.0.1 at 2009-04-18 19:57:38) [GET]
+Rendering page/ideas
+Completed in 35ms (View: 34, DB: 0) | 200 OK [http://localhost/ideas]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#permaculture (for 127.0.0.1 at 2009-04-18 19:57:40) [GET]
+Rendering page/permaculture
+Completed in 34ms (View: 32, DB: 0) | 200 OK [http://localhost/permaculture]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#about (for 127.0.0.1 at 2009-04-18 19:57:42) [GET]
+Rendering page/about
+Completed in 38ms (View: 36, DB: 0) | 200 OK [http://localhost/about]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#index (for 127.0.0.1 at 2009-04-18 19:57:52) [GET]
+Rendering template within layouts/application
+Rendering page/index
+Completed in 24ms (View: 23, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#ideas (for 127.0.0.1 at 2009-04-18 19:57:53) [GET]
+Rendering page/ideas
+Completed in 34ms (View: 32, DB: 0) | 200 OK [http://localhost/ideas]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#permaculture (for 127.0.0.1 at 2009-04-18 19:57:57) [GET]
+Rendering page/permaculture
+Completed in 34ms (View: 32, DB: 0) | 200 OK [http://localhost/permaculture]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#about (for 127.0.0.1 at 2009-04-18 19:58:00) [GET]
+Rendering page/about
+Completed in 34ms (View: 32, DB: 0) | 200 OK [http://localhost/about]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#index (for 127.0.0.1 at 2009-04-18 20:03:46) [GET]
+Rendering template within layouts/application
+Rendering page/index
+Completed in 24ms (View: 22, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#ideas (for 127.0.0.1 at 2009-04-18 20:03:48) [GET]
+Rendering page/ideas
+Completed in 36ms (View: 33, DB: 0) | 200 OK [http://localhost/ideas]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#permaculture (for 127.0.0.1 at 2009-04-18 20:03:50) [GET]
+Rendering page/permaculture
+Completed in 36ms (View: 34, DB: 0) | 200 OK [http://localhost/permaculture]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#farm (for 127.0.0.1 at 2009-04-18 20:03:53) [GET]
+Rendering page/farm
+Completed in 38ms (View: 36, DB: 0) | 200 OK [http://localhost/farm]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#about (for 127.0.0.1 at 2009-04-18 20:03:57) [GET]
+Rendering page/about
+Completed in 38ms (View: 36, DB: 0) | 200 OK [http://localhost/about]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#index (for 127.0.0.1 at 2009-04-18 20:04:18) [GET]
+Rendering template within layouts/application
+Rendering page/index
+Completed in 23ms (View: 22, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-18 20:04:19) [GET]
+
+ActionController::RoutingError (No route matches "/images/loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#index (for 127.0.0.1 at 2009-04-18 20:05:06) [GET]
+Rendering template within layouts/application
+Rendering page/index
+Completed in 24ms (View: 23, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#index (for 127.0.0.1 at 2009-04-18 20:05:29) [GET]
+Rendering template within layouts/application
+Rendering page/index
+Completed in 24ms (View: 23, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#index (for 127.0.0.1 at 2009-04-18 20:05:32) [GET]
+Rendering template within layouts/application
+Rendering page/index
+Completed in 24ms (View: 22, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#farm (for 127.0.0.1 at 2009-04-18 20:05:34) [GET]
+Rendering page/farm
+Completed in 33ms (View: 31, DB: 0) | 200 OK [http://localhost/farm]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#work (for 127.0.0.1 at 2009-04-18 20:05:36) [GET]
+Rendering page/work
+Completed in 93ms (View: 91, DB: 0) | 200 OK [http://localhost/work]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#index (for 127.0.0.1 at 2009-04-18 20:05:58) [GET]
+Rendering template within layouts/application
+Rendering page/index
+Completed in 30ms (View: 26, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#ideas (for 127.0.0.1 at 2009-04-18 20:06:00) [GET]
+Rendering page/ideas
+Completed in 32ms (View: 30, DB: 0) | 200 OK [http://localhost/ideas]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#work (for 127.0.0.1 at 2009-04-18 20:06:02) [GET]
+Rendering page/work
+Completed in 41ms (View: 39, DB: 0) | 200 OK [http://localhost/work]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#permaculture (for 127.0.0.1 at 2009-04-18 20:06:03) [GET]
+Rendering page/permaculture
+Completed in 34ms (View: 32, DB: 0) | 200 OK [http://localhost/permaculture]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#index (for 127.0.0.1 at 2009-04-18 20:06:09) [GET]
+Rendering template within layouts/application
+Rendering page/index
+Completed in 23ms (View: 22, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#permaculture (for 127.0.0.1 at 2009-04-18 20:06:11) [GET]
+Rendering page/permaculture
+Completed in 95ms (View: 33, DB: 0) | 200 OK [http://localhost/permaculture]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#links (for 127.0.0.1 at 2009-04-18 20:06:13) [GET]
+Rendering page/links
+Completed in 33ms (View: 31, DB: 0) | 200 OK [http://localhost/links]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#farm (for 127.0.0.1 at 2009-04-18 20:06:18) [GET]
+Rendering page/farm
+Completed in 33ms (View: 31, DB: 0) | 200 OK [http://localhost/farm]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#index (for 127.0.0.1 at 2009-04-18 20:07:14) [GET]
+Rendering template within layouts/application
+Rendering page/index
+Completed in 24ms (View: 22, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#ideas (for 127.0.0.1 at 2009-04-18 20:07:15) [GET]
+Rendering page/ideas
+Completed in 35ms (View: 32, DB: 0) | 200 OK [http://localhost/ideas]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#permaculture (for 127.0.0.1 at 2009-04-18 20:07:17) [GET]
+Rendering page/permaculture
+Completed in 110ms (View: 37, DB: 0) | 200 OK [http://localhost/permaculture]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#index (for 127.0.0.1 at 2009-04-18 20:10:27) [GET]
+Rendering template within layouts/application
+Rendering page/index
+Completed in 24ms (View: 22, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#ideas (for 127.0.0.1 at 2009-04-18 20:10:29) [GET]
+Rendering page/ideas
+Completed in 37ms (View: 33, DB: 0) | 200 OK [http://localhost/ideas]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#permaculture (for 127.0.0.1 at 2009-04-18 20:10:31) [GET]
+Rendering page/permaculture
+Completed in 36ms (View: 34, DB: 0) | 200 OK [http://localhost/permaculture]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#index (for 127.0.0.1 at 2009-04-18 20:11:03) [GET]
+Rendering template within layouts/application
+Rendering page/index
+Completed in 24ms (View: 22, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#index (for 127.0.0.1 at 2009-04-18 20:11:05) [GET]
+Rendering template within layouts/application
+Rendering page/index
+Completed in 26ms (View: 25, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#index (for 127.0.0.1 at 2009-04-18 20:11:22) [GET]
+Rendering template within layouts/application
+Rendering page/index
+Completed in 25ms (View: 23, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#index (for 127.0.0.1 at 2009-04-18 20:11:30) [GET]
+Rendering template within layouts/application
+Rendering page/index
+Completed in 25ms (View: 23, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#index (for 127.0.0.1 at 2009-04-18 20:11:37) [GET]
+Rendering template within layouts/application
+Rendering page/index
+Completed in 25ms (View: 23, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#index (for 127.0.0.1 at 2009-04-18 20:12:30) [GET]
+Rendering template within layouts/application
+Rendering page/index
+Completed in 25ms (View: 22, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#permaculture (for 127.0.0.1 at 2009-04-18 20:12:35) [GET]
+Rendering page/permaculture
+Completed in 96ms (View: 94, DB: 0) | 200 OK [http://localhost/permaculture]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#ideas (for 127.0.0.1 at 2009-04-18 20:12:39) [GET]
+Rendering page/ideas
+Completed in 39ms (View: 37, DB: 0) | 200 OK [http://localhost/ideas]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#index (for 127.0.0.1 at 2009-04-18 20:13:29) [GET]
+Rendering template within layouts/application
+Rendering page/index
+Completed in 24ms (View: 22, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#ideas (for 127.0.0.1 at 2009-04-18 20:13:33) [GET]
+Rendering page/ideas
+Completed in 31ms (View: 30, DB: 0) | 200 OK [http://localhost/ideas]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#index (for 127.0.0.1 at 2009-04-18 20:14:09) [GET]
+Rendering template within layouts/application
+Rendering page/index
+Completed in 23ms (View: 22, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#index (for 127.0.0.1 at 2009-04-18 20:14:20) [GET]
+Rendering template within layouts/application
+Rendering page/index
+Completed in 25ms (View: 23, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#index (for 127.0.0.1 at 2009-04-18 20:14:27) [GET]
+Rendering template within layouts/application
+Rendering page/index
+Completed in 26ms (View: 24, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#work (for 127.0.0.1 at 2009-04-18 20:14:28) [GET]
+Rendering page/work
+Completed in 34ms (View: 32, DB: 0) | 200 OK [http://localhost/work]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#ideas (for 127.0.0.1 at 2009-04-18 20:14:31) [GET]
+Rendering page/ideas
+Completed in 35ms (View: 33, DB: 0) | 200 OK [http://localhost/ideas]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#farm (for 127.0.0.1 at 2009-04-18 20:14:35) [GET]
+Rendering page/farm
+Completed in 34ms (View: 33, DB: 0) | 200 OK [http://localhost/farm]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#permaculture (for 127.0.0.1 at 2009-04-18 20:14:39) [GET]
+Rendering page/permaculture
+Completed in 37ms (View: 35, DB: 0) | 200 OK [http://localhost/permaculture]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#about (for 127.0.0.1 at 2009-04-18 20:14:41) [GET]
+Rendering page/about
+Completed in 97ms (View: 94, DB: 0) | 200 OK [http://localhost/about]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#links (for 127.0.0.1 at 2009-04-18 20:14:44) [GET]
+Rendering page/links
+Completed in 33ms (View: 31, DB: 0) | 200 OK [http://localhost/links]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#index (for 127.0.0.1 at 2009-04-18 20:15:00) [GET]
+Rendering template within layouts/application
+Rendering page/index
+Completed in 24ms (View: 22, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#index (for 127.0.0.1 at 2009-04-18 20:15:10) [GET]
+Rendering template within layouts/application
+Rendering page/index
+Completed in 24ms (View: 22, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#index (for 127.0.0.1 at 2009-04-18 20:15:13) [GET]
+Rendering template within layouts/application
+Rendering page/index
+Completed in 24ms (View: 22, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#ideas (for 127.0.0.1 at 2009-04-18 20:15:18) [GET]
+Rendering page/ideas
+Completed in 94ms (View: 93, DB: 0) | 200 OK [http://localhost/ideas]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#permaculture (for 127.0.0.1 at 2009-04-18 20:15:20) [GET]
+Rendering page/permaculture
+Completed in 36ms (View: 34, DB: 0) | 200 OK [http://localhost/permaculture]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#links (for 127.0.0.1 at 2009-04-18 20:15:23) [GET]
+Rendering page/links
+Completed in 37ms (View: 35, DB: 0) | 200 OK [http://localhost/links]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#work (for 127.0.0.1 at 2009-04-18 20:15:26) [GET]
+Rendering page/work
+Completed in 35ms (View: 32, DB: 0) | 200 OK [http://localhost/work]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#farm (for 127.0.0.1 at 2009-04-18 20:15:48) [GET]
+Rendering page/farm
+Completed in 36ms (View: 35, DB: 0) | 200 OK [http://localhost/farm]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#index (for 127.0.0.1 at 2009-04-18 20:16:01) [GET]
+Rendering template within layouts/application
+Rendering page/index
+Completed in 31ms (View: 29, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#permaculture (for 127.0.0.1 at 2009-04-18 20:16:04) [GET]
+Rendering page/permaculture
+Completed in 34ms (View: 33, DB: 0) | 200 OK [http://localhost/permaculture]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#index (for 127.0.0.1 at 2009-04-18 20:44:32) [GET]
+Rendering template within layouts/application
+Rendering page/index
+Completed in 24ms (View: 22, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#index (for 127.0.0.1 at 2009-04-18 20:44:34) [GET]
+Rendering template within layouts/application
+Rendering page/index
+Completed in 24ms (View: 22, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#work (for 127.0.0.1 at 2009-04-18 20:44:36) [GET]
+Rendering page/work
+Completed in 33ms (View: 31, DB: 0) | 200 OK [http://localhost/work]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#ideas (for 127.0.0.1 at 2009-04-18 20:44:38) [GET]
+Rendering page/ideas
+Completed in 32ms (View: 30, DB: 0) | 200 OK [http://localhost/ideas]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#index (for 127.0.0.1 at 2009-04-19 07:32:14) [GET]
+Rendering template within layouts/application
+Rendering page/index
+Completed in 25ms (View: 23, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#work (for 127.0.0.1 at 2009-04-19 07:32:15) [GET]
+Rendering page/work
+Completed in 31ms (View: 30, DB: 0) | 200 OK [http://localhost/work]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#permaculture (for 127.0.0.1 at 2009-04-19 07:32:17) [GET]
+Rendering page/permaculture
+Completed in 32ms (View: 31, DB: 0) | 200 OK [http://localhost/permaculture]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#links (for 127.0.0.1 at 2009-04-19 07:32:18) [GET]
+Rendering page/links
+Completed in 32ms (View: 31, DB: 0) | 200 OK [http://localhost/links]
